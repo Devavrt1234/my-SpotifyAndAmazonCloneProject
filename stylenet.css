@@ -1,0 +1,593 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* apply it on all the html tags */
+
+body{
+    background-color: black;
+    color:white;
+    font-family: "Poppins",sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+
+.navbar{
+    position: absolute;
+    top:0px;
+    width:98%;
+    display: flex;
+    justify-content: space-between;
+    padding:0.1% 6%;
+    /* top bottom 3% padding for parent div */
+    /* right left 5% padding for parent div */
+    z-index: 10;
+    border:transparent;
+}
+
+.navbar_netflix{
+   height:6em;
+   width:156px;
+   margin-left: 101px;
+   border: transparent;
+}
+
+.navbar_nav_items{
+
+    display:flex;
+    gap:25px;
+    border: transparent;
+    margin-top: 24px;
+}
+
+.netflix_logo{
+
+    width: 100%;
+    height: 100%;
+}
+
+/* your hurdle removal for globe icon */
+.dropdown_container{
+    display: flex;
+    height: 70%;
+    width: 149px;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    padding: 0.5em;
+    border-radius: 4px;
+    gap:4px;
+    background: rgba(0, 0, 0, 0.8);
+    /* transparency is 0.4*/
+
+}
+.dropdown_container .globe{
+    height:103%;
+    width: 25%;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    
+}
+.language_drop_down{
+    background: transparent;
+    border:none;
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+}
+/* hurdle removed */
+.Signin_button{
+    border:#E50914;
+    background-color: #f70511;
+    padding:0.25rem 0.5rem;
+    border-radius: 4px;
+    height:70%;
+    width:16vh;
+   
+}
+.Signin_button:hover{
+ 
+    opacity: 0.9;
+}
+.Signin_button a{
+    text-decoration: none;
+    color:white;
+}
+
+.hero_bg_img_cont{
+    width:100%;
+    height: 100%;
+}
+
+.hero_bg_img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;   
+
+}
+
+.hero_bg_overlay{
+   position:absolute;
+   width:100%;
+   height:90%;
+   background: rgba(0, 0, 0, 0.4);
+   box-shadow: inset 120px 100px 250px #000000,inset -120px -100px 250px #000000;
+   inset:0;
+   /* it performs overlay of div of .hero_bg_overlay on
+    .hero_bg_img div*/
+}
+
+.hero_card{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset:0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hero_title{
+    font-weight: 600;
+    font-size: 5vw;
+    line-height: 1.1;
+    margin: 0 0 1.6rem;
+    width: 70vw;
+    height: 10vh;
+
+    /* border:2px solid white; */
+}
+
+
+.hero_card .hero_subtitle{
+
+    /* border:2px solid white; */
+   
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 500;
+    /* font-size: 1.9rem; */
+    font-size: 1.9vw;
+    line-height: 0.25;
+    margin: 0 0 2rem;
+    
+}
+
+
+.hero_card a{
+    text-decoration: none;
+    margin: 0.5rem 0px;
+    padding:2.5rem 1.25rem;
+    /* border:2px solid white; */
+    font-weight: 700;
+    height: 10vh;
+}
+
+.btn{
+    display: flex;
+    /* background: var(--primary-color); */
+    color:#fff;
+    /* padding:0.4rem 1.3rem; */
+    /* font-size:1rem; */
+    /* text-align:center; */
+    border:none;
+    /* cursor: pointer; */
+    margin-right: 0.5rem;
+    outline:none;
+    /* box-shadow: 0px 1px 0 rgba(0,0,0,0.45); */
+    border-radius: 2px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+
+
+/* .btn-xl{
+    font-size:2rem;
+    padding:1.5rem 2.1rem;
+    text-transform: uppercase;
+} */
+
+.btn-lg{
+    font-size:1.4rem;
+    padding:0.8rem 1.3rem;
+    text-transform: uppercase;
+    border:#f70511;
+    background-color: #f70511;
+    border-radius: 3px;
+    
+}
+.btn-lag{
+    font-size:1.4rem;
+    padding:1.5rem 2.1rem;
+    text-transform: uppercase;
+    border:#f70511;
+    background-color: #f70511;
+    border-radius: 7px;
+    text-decoration: none;
+    width: 29rem;
+    
+}
+.tabs{
+    background: var(--dark-color);
+    padding-top:2rem;
+    border-bottom: 3px solid hsl(0, 0%, 24%);
+    background-color: #0d0d0d;
+}
+
+.tabs .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tabs p{
+    font-size:1.2rem;
+    padding-top:0.5rem;
+}
+.container{
+    max-width: 90%;
+    margin:auto;
+    overflow:hidden;
+    padding:0 2rem;
+    
+}
+
+.text-xl{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+/* .text-lg{
+    margin-top: 40px;
+    font-size:1.9rem;
+    margin-bottom: 1.1rem;
+    text-align:left;
+    color:#fff;
+
+} */
+
+.text-lg{
+    margin-top: 40px;
+    font-size:2.5rem;
+    margin-bottom: 1.1rem;
+    text-align:left;
+    color:#fff;
+
+}
+.text-md{
+    
+        margin-top: 40px;
+        font-size:2.5rem;
+        margin-bottom: 1.2rem;
+        text-align:center;
+        color:#fff;
+    
+}
+
+
+
+/* targeting each div inside container using > */
+.tabs .container >div{
+    padding:1.5rem 0;
+    
+}
+.tabs .container >div:hover{
+    color:#fff;
+    cursor: pointer;
+    
+}
+.tab-border{
+    border-bottom:  4px solid #ff0000;
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    gap:0.5rem;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+#tab-1-content .tab-1-content-inner .laptop_img{
+    margin-left: 40vw;
+    height: 40vh;
+    width: 40vw;
+}
+
+#tab-2-content .tab-2-content-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tab-2-content .tab-2-content-top a{
+    margin-top: 4rem;
+    text-decoration: none;
+    width: 40vw;
+}
+#tab-2-content .tab-2-content-bottom{
+    margin-top:2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+#tab-3-content .text-center a{
+    margin-top: 1rem;
+    text-decoration: none;
+    width: 40vw;
+    
+    
+}
+
+/* Hide content initially */
+#tab-1-content,#tab-2-content,#tab-3-content{
+    display: none;
+}
+
+.showtabcontent{
+    display: block !important;
+}
+.text-center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:1rem;
+    flex-direction: column;
+    padding:2rem;
+ /* border: 2px solid white; */
+}
+.table{
+    width:100%;
+    margin-top:2rem;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-bottom: 2rem;
+}
+.table thead th{
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+.table tbody tr td{
+   color:#999;
+   padding:0.8rem 1.2rem;
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+.table tbody tr td:first-child{
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd){
+    background:#222;
+}
+
+.footer,.footer a{
+    color:#999;
+    text-decoration: none;
+}
+.footer p{
+    margin-bottom: 1.5rem;
+}
+.footer{
+    max-width: 75%;
+    margin:auto;
+    overflow: hidden;
+    padding:0.2rem;
+    margin-top: 20px;
+}
+
+.footer .footer-cols{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 1.2rem;
+    
+}
+.footer li{
+    line-height: 1.9;
+}
+
+.icon-right{
+margin-left:1rem;
+}
+@media(max-width:960px){
+
+   
+    main{
+        height: 30vh;
+    }
+
+    header{
+        height: 20vh;
+    }
+
+   
+      .navbar{
+        margin-top:20vh;
+
+      }
+
+    .hero_title{
+        font-weight: 600;
+        font-size: 7vw;
+        line-height:0.2;
+        margin-top:4%;
+        width: 60vw;
+        height: 0.8vw;
+       
+    
+        /* border:2px solid white; */
+    }
+
+    .hero_card .hero_subtitle p{
+        /* font-size:1rem; */
+        line-height: 0.1;
+        font-weight: 500;
+        font-size:3vw;
+        line-height:0.2;
+        margin-top: 1rem;
+
+    }
+    .hero_card {
+        margin-top: 30%;
+        margin-left:4%;
+        margin-bottom: 40vh;
+       
+        
+    }
+    .navbar_nav_items{
+
+        display:flex;
+        gap:10px;
+        border: transparent;
+        margin-top: 6px;
+        
+    }
+    .language_drop_down{
+        background: transparent;
+        border:none;
+        color:rgb(255, 255, 255);
+        font-size: 10px;
+    }
+    .text-lg{
+        font-size: 1.3rem;
+    }
+    .text-md{
+        font-size: 1rem;
+    }
+    .footer .footer-cols{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hero_card a{
+        text-decoration: none;
+        padding:0.3rem 0.3rem;
+        /* border:2px solid white; */
+        font-weight: 700;
+        height: 7vw;
+        width: 50vw;
+        font-size: 3vw;
+    }
+
+   
+    .Signin_button{
+        border:#E50914;
+        background-color: #f70511;
+        padding:0.25rem 0.5rem;
+        border-radius: 4px;
+        height:4.4vh;
+        width:11vw;
+         font-size: 2vw;
+
+       
+    }
+
+    .dropdown_container .globe{
+        height:50%;
+        width: 12%;
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        
+    }
+
+    .dropdown_container{
+        display: flex;
+        height:4vh;
+        width:12vh;
+        
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid white;
+        padding: 0.1em;
+        border-radius: 4px;
+        gap:0.4px;
+        background: rgba(0, 0, 0, 0.8);
+        /* transparency is 0.4*/
+    
+    }
+    .navbar_netflix{
+        height:11vh;
+        width:11vh;
+        margin-left: 1px;
+        border: transparent;
+       
+     }
+
+     .hero_bg_img_cont{
+        width:100%;
+        height: 100%;
+    }
+
+    .netflix_logo{
+
+        width: 50%;
+        height: 50%;
+    }
+    
+    .tab-2-content-bottom img{
+        height:50vh;
+        width:60vw;
+    }
+
+    .hero_bg_overlay{
+        position:absolute;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: inset 80px 80px 250px #000000,inset -80px -80px 250px #000000;
+        inset:0;
+        height: 70%;
+        width:100%;
+        /* it performs overlay of div of .hero_bg_overlay on
+         .hero_bg_img div*/
+     }
+    
+
+}
+
+@media(max-width:700px){
+   
+    .hero_bg_overlay{
+        position:absolute;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: inset 80px 80px 250px #000000,inset -80px -80px 250px #000000;
+        inset:0;
+        height: 60%;
+        width:100%;
+        /* it performs overlay of div of .hero_bg_overlay on
+         .hero_bg_img div*/
+     }
+    #tab-1-content .tab-1-content-inner{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #tab-2-content .tab-2-content-top{
+        display: block;
+        text-align: center;
+    }
+    #tab-2-content .tab-2-content-bottom{
+        grid-template-columns: 1fr;
+    }
+
+
+}
